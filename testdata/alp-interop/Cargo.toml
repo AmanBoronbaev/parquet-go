@@ -8,5 +8,9 @@ publish = false
 name = "write-samples"
 path = "write.rs"
 
+[[bin]]
+name = "compare-go"
+path = "compare.rs"
+
 [dependencies]
 parquet = { git = "https://github.com/apache/arrow-rs", rev = "4f1ed42f7a1fb76d090ec1351cfdb6e904f59f0b", default-features = false, features = ["zstd"] }
