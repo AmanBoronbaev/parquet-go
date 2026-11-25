@@ -1,0 +1,12 @@
+[package]
+name = "alp-write-interop"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[[bin]]
+name = "write-samples"
+path = "write.rs"
+
+[dependencies]
+parquet = { git = "https://github.com/apache/arrow-rs", rev = "4f1ed42f7a1fb76d090ec1351cfdb6e904f59f0b", default-features = false, features = ["zstd"] }
